@@ -4,21 +4,22 @@ const segundos = document.querySelector("#segundos");
 
 const relogio = setInterval(function time(){
     let dataHoje = new Date();
-    let hora = dataHoje.getHours();
-    let minuto = dataHoje.getMinutes();
-    let segundo = dataHoje.getSeconds();
+    let hrs = dataHoje.getHours();
+    let mins = dataHoje.getMinutes();
+    let segs = dataHoje.getSeconds();
 
-    if(hora < 10){
-        hora = `0${hora}`;
+    if(hrs < 10){
+        hrs = "0" + hrs;
     }
-    if(minuto < 10){
-        minuto = `0${minuto}`;
+    if(mins < 10){
+        mins = "0" + mins;
     }
-    if(segundo < 10){
-        segundo `0${segundo}`;
+    if(segs < 10){
+        segs = "0" + segs;
     }
+    
+    horas.textContent = hrs;
+    minutos.textContent = mins;
+    segundos.textContent = segs;
 
-    horas.textContent = hora;
-    minutos.textContent = minuto;
-    segundos.textContent = segundo;
 })
