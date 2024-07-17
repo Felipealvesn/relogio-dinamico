@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg, #F52883, #7029B7);
+    font-family: "Poppins", sans-serif;
+}
+.container-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 40px;
+    justify-content: space-between;
+    height: 40%;
+    align-items: center;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(120deg, #F52883, #7029B7);
+
+}
+.relogios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 4px;
+    justify-content: center;
+    height: 90%;
+    letter-spacing: 2px;
+    width: 25%;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.788);
+}
+span{
+    color: white;
+    font-size: 55px;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+}
+.relogios > p{
+    width: 80%;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
