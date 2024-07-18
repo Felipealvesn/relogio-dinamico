@@ -1,3 +1,4 @@
+const background = document.querySelector(".container-main")
 const horas = document.querySelector("#horas");
 const minutos = document.querySelector("#minutos");
 const segundos = document.querySelector("#segundos");
@@ -17,7 +18,7 @@ const relogio = setInterval(function time(){
     if(segs < 10){
         segs = "0" + segs;
     }
-    
+
     horas.textContent = hrs;
     minutos.textContent = mins;
     segundos.textContent = segs;
