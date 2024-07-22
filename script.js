@@ -1,24 +1,24 @@
-let horas = document.querySelector("#horas")
-let minutos = document.querySelector("#minutos")
-let segundos = document.querySelector("#segundos")
+const horas = document.querySelector("#horas");
+const minutos = document.querySelector("#minutos");
+const segundos = document.querySelector("#segundos");
 
-const clock = setInterval(function time(){
-    let dataDeHJ = new Date()
-    let hrs = dataDeHJ.getHours()
-    let minu = dataDeHJ.getMinutes()
-    let segun = dataDeHJ.getSeconds()
+let relogio = setInterval(function time(){
+    let dateHJ = new Date();
+    let hrs = dateHJ.getHours();
+    let min = dateHJ.getMinutes();
+    let seg = dateHJ.getSeconds();
 
     if(hrs < 10){
         hrs = "0" + hrs;
     }
-    if(minu < 10){
-        minu = "0" + minu;
+    if(min < 10){
+        min = "0" + min;
     }
-    if(segun < 10){
-        segun = "0" + segun;
+    if(seg < 10){
+        seg = "0" + seg;
     }
 
-    horas.textContent = hrs;
-    minutos.textContent = minu;
-    segundos.textContent = segun;
+    horas.innerText = hrs;
+    minutos.innerText = min;
+    segundos.innerText = seg;
 })
